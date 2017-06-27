@@ -5,15 +5,18 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
+/*
 * {
   overflow-x: hidden;
   overflow-y: inherit;
   -webkit-overflow-scrolling: touch;
 }
+*/
 
 body {
   height: 101%;
   margin-bottom: -10px;
+  overflow-x: hidden;
 }
 
 html {
