@@ -7,7 +7,7 @@
 
 * {
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: visible;
   -webkit-overflow-scrolling: touch;
 }
 
