@@ -181,6 +181,7 @@ blockquote {
 #dbpic {
   width: 100%;
   height: auto;
+  margin: 10px 0px;
   border-radius: 10px;
   opacity: .9;
 }
