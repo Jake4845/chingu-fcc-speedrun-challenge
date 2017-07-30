@@ -7,7 +7,7 @@ $( document ).ready(function() {
 
   // Request IP address from user to get location & store coordinates
   $.getJSON("https://ipapi.co/json", function(data) {
-    $("#city").html(data.city);
+    //$("#city").html(data.city);
     lat = data.latitude;
     lon = data.longitude;
 
@@ -15,6 +15,7 @@ $( document ).ready(function() {
     // Need to add 'https://cors-anywhere.herokuapp.com/' before URL to have HTTPS using a CORS server
     $.getJSON("https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon +"&APPID=44762e241a2c3fc4f616e416abc08f0e", function(weatherData) {
 
+    $("#city").html(weatherData.name);
     // Store temperatures (celsius and fahrenheit)
     temp[0] = (weatherData.main.temp - 273.15).toFixed(0) + "&#176";
     temp[1] = (((weatherData.main.temp - 273.15)*1.8) + 32).toFixed(0) + "&#176";
