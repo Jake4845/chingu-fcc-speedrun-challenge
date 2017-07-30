@@ -10,4 +10,11 @@ Build an app that is functionally similar to this: http://codepen.io/FreeCodeCam
 
 * User Story: I can push a button to toggle between Fahrenheit and Celsius.
 
+## Deployment
+* open index.html
+
+## Launch
+[Local Weather App](https://ziggysauce.github.io/chingu-fcc-speedrun-challenge/frontend/local-weather/)
+
 ## Notes
+Created a local weather app that gets IP address information using http://ip-api.com/ geolocation API as well as OpenWeatherMap API to get weather information. The user can click the "F" or "C" button to toggle between measurement units (F/C and mi/km) for the temperature and wind speed. For the weather icons, https://erikflowers.github.io/weather-icons/ was used to generate a different icon depending on the current weather description.
