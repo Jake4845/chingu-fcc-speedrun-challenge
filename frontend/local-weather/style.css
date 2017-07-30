@@ -88,35 +88,19 @@ button {
 .fc {
   border-radius: 50%;
   font-size: 35px;
-  height: 48px;
-  width: 45px;
+  height: 1.5em;
+  width: 1.5em;
   text-align: center;
   text-decoration: none;
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0px;
 }
 
 .fc:hover {
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  /*color: #4C739B;
-  background-color: #FFFFFF;*/
-}
-
-.fc:active {
-  border: none;
-  text-decoration: none;
-}
-
-.fc:visited {
-  border: none;
-  text-decoration: none;
-}
-
-.fc:focus {
-  border: none;
-  text-decoration: none;
 }
 
 footer {
