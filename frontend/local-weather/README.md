@@ -11,7 +11,7 @@ Build an app that is functionally similar to this: http://codepen.io/FreeCodeCam
 * User Story: I can push a button to toggle between Fahrenheit and Celsius.
 
 ## Deployment
-* open index.html
+* Open index.html
 
 ## Launch
 [Local Weather App](https://ziggysauce.github.io/chingu-fcc-speedrun-challenge/frontend/local-weather/)
