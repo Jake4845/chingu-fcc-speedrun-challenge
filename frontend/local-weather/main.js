@@ -6,10 +6,10 @@ $( document ).ready(function() {
   var temp = []; var wind = [];
 
   // Request IP address from user to get location & store coordinates
-  $.getJSON("http://ip-api.com/json", function(data) {
+  $.getJSON("https://ipapi.co/json", function(data) {
     $("#city").html(data.city);
-    lat = data.lat;
-    lon = data.lon;
+    lat = data.latitude;
+    lon = data.longitude;
 
     // Get weather information
     // Need to add 'https://cors-anywhere.herokuapp.com/' before URL to have HTTPS using a CORS server
