@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
     // Get weather information
     // Need to add 'https://cors-anywhere.herokuapp.com/' before URL to have HTTPS using a CORS server
-    $.getJSON("http://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon +"&APPID=44762e241a2c3fc4f616e416abc08f0e", function(weatherData) {
+    $.getJSON("https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon +"&APPID=44762e241a2c3fc4f616e416abc08f0e", function(weatherData) {
 
     // Store temperatures (celsius and fahrenheit)
     temp[0] = (weatherData.main.temp - 273.15).toFixed(0) + "&#176";
