@@ -20,4 +20,4 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 
 ## Notes
 
-Created a a simple random quote machine using the Forismatic API to generate random quotes each time the user clicks the but "new quote" button. There is also a twitter button that allowers users to tweet out the current quote.
+Created a a simple random quote machine using the Forismatic API to generate random quotes each time the user clicks the "new quote" button. There is also a twitter button that allowers users to tweet out the current quote.
