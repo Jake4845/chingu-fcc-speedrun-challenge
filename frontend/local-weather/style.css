@@ -104,6 +104,21 @@ button {
   background-color: #FFFFFF;*/
 }
 
+.fc:active {
+  border: none;
+  text-decoration: none;
+}
+
+.fc:visited {
+  border: none;
+  text-decoration: none;
+}
+
+.fc:focus {
+  border: none;
+  text-decoration: none;
+}
+
 footer {
 	position: fixed;
 	bottom: 0;
