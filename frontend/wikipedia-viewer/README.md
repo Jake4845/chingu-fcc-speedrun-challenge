@@ -16,4 +16,14 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 
 **Hint #3:** Use this link to experiment with Wikipedia's API.
 
+## Deployment
+
+* Open index.html
+
+## Launch
+
+[Wikipedia Viewer](https://ziggysauce.github.io/chingu-fcc-speedrun-challenge/frontend/wikipedia-viewer/)
+
+
 ## Notes
+Created a wikipedia viewer that uses the Wikipedia API to generate linked articles for the user based on the input typed.
