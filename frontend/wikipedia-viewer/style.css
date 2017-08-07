@@ -1,113 +1,74 @@
-/* Stylesheet for Local Weather App */
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* CSS File for the Wikipedia Viewer */
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
-body {
-  background: linear-gradient(to bottom, #4C739B 0%, #B0D5A7 100%) fixed;
-  background: -webkit-linear-gradient(to bottom, #4C739B 0%, #B0D5A7 100%) fixed;
-  background: -moz-linear-gradient(to bottom, #4C739B 0%, #B0D5A7 100%) fixed;
-}
-
-#weatherbox {
-  /*box-shadow: 2px 2px 10px #FFFFFF;*/
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
+#wikibox {
+  height: 70%;
+  width: 70%;
+  margin: auto;
   left: 0;
   right: 0;
   top: 0;
-  bottom: 5vw;
-  margin: auto;
-  overflow: auto;
-  width: 18em;
-  height: 22em;
+  bottom: 3em;
+  position: absolute;
 }
 
-#topbox {
-  border-bottom: 1px #FFFFFF solid;
-  height: 20%;
+#wikititle {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Poiret One', sans-serif;
 }
 
-#middlebox {
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
+input {
+  display: block;
+  margin: 0px auto;
+  font-size: 16px;
+  color: #EAB159;
 }
 
-#midmid {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+input[type=text] {
+  width: 40%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #EAB159;
 }
 
-#bottombox {
-  height: 30%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.bottomsides {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.wi {
-  width: 100%;
-  font-size: 55px;
-}
-
-button {
-  color: #FFFFFF;
+input[type=text]:focus {
+  width: 60%;
   outline: none;
 }
 
-#temp {
-  font-size: 75px;
-  padding-left: 10px;
+button {
+  display: block;
+	margin: 20px auto;
+	padding: 15px 20px;
+	border: none;
+	background-color: #EAB159;
+	color: #FFFFFF;
+	font-size: 15px;
+	text-align: center;
+	outline: none;
+	transition-duration: 800ms;
+	-webkit-transition-duration: 800ms;
 }
 
-.fc {
-  border-radius: 50%;
-  font-size: 35px;
-  height: 48px;
-  width: 45px;
-  text-align: center;
-  text-decoration: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0px;
+button:hover {
+	outline: 1px solid #EAB159;
+	background-color: #FFFFFF;
+	color: #EAB159;
+	cursor: pointer;
 }
-
-.fc:hover {
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-}
-
 
 footer {
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	height: 5vw;
+	height: 3em;
 	background-color: #000000;
 	z-index: 2;
 }
@@ -126,6 +87,7 @@ footer {
 	padding: 0px 10px;
 	color: #C1C1C1;
 	font-family: sans-serif;
+  font-size: 1em;
 }
 
 #social {
@@ -143,5 +105,5 @@ footer div a i {
 }
 
 footer div a i:hover {
-	color: #B0D5A7;
+	color: #EAB159;
 }
