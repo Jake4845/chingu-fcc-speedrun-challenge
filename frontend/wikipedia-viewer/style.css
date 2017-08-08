@@ -58,21 +58,24 @@ input[type=text]:focus {
   outline: none;
 }
 
-button {
+#randart {
   display: block;
+  max-width: 150px;
 	margin: 20px auto;
-	padding: 15px 20px;
+	padding: 10px;
 	border: none;
 	background-color: #EAB159;
 	color: #FFFFFF;
-	font-size: 15px;
+	font-size: 18px;
+  font-family: 'Poiret One', sans-serif;
+  text-decoration: none;
 	text-align: center;
 	outline: none;
 	transition-duration: 800ms;
 	-webkit-transition-duration: 800ms;
 }
 
-button:hover {
+#randart:hover {
 	outline: 1px solid #EAB159;
 	background-color: #FFFFFF;
 	color: #EAB159;
