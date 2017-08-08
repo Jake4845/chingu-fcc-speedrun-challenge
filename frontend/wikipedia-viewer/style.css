@@ -37,8 +37,24 @@ input[type=text] {
   border-bottom: 1px solid #EAB159;
 }
 
+@media screen and (min-width:500px) {
+  input[type=text] {
+    width: 60%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #EAB159;
+  }
+  input[type=text]:hover {
+    width: 80%;
+    outline: none;
+  }
+}
+
 input[type=text]:focus {
-  width: 60%;
+  width: 80%;
   outline: none;
 }
 
