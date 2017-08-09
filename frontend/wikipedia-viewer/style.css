@@ -28,7 +28,7 @@ input {
 }
 
 input[type=search] {
-  width: 60%;
+  width: 75%;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   border-top: none;
@@ -37,9 +37,9 @@ input[type=search] {
   border-bottom: 1px solid #EAB159;
 }
 /* For screen larger than phones */
-@media screen and (min-width:500px) {
+@media screen and (min-width:700px) {
   input[type=search] {
-    width: 40%;
+    width: 50%;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     border-top: none;
@@ -48,10 +48,10 @@ input[type=search] {
     border-bottom: 1px solid #EAB159;
   }
   input[type=search]:focus {
+    width: 75%;
     outline: none;
   }
   input[type=search]:active {
-    width: 80%;
     outline: none;
   }
 }
@@ -61,7 +61,6 @@ input[type=search]:focus {
 }
 
 input[type=search]:active {
-  width: 80%;
   outline: none;
 }
 
