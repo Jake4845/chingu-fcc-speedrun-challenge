@@ -24,10 +24,10 @@ input {
   display: block;
   margin: 0px auto;
   font-size: 16px;
-  color: #EAB159;
+  color: #6B6B6B;
 }
 
-input[type=text] {
+input[type=search] {
   width: 60%;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
@@ -38,7 +38,7 @@ input[type=text] {
 }
 /* For screen larger than phones */
 @media screen and (min-width:500px) {
-  input[type=text] {
+  input[type=search] {
     width: 40%;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
@@ -47,13 +47,20 @@ input[type=text] {
     border-left: none;
     border-bottom: 1px solid #EAB159;
   }
-  input[type=text]:focus {
+  input[type=search]:focus {
+    outline: none;
+  }
+  input[type=search]:active {
     width: 80%;
     outline: none;
   }
 }
 
-input[type=text]:focus {
+input[type=search]:focus {
+  outline: none;
+}
+
+input[type=search]:active {
   width: 80%;
   outline: none;
 }
