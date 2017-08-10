@@ -12,10 +12,10 @@ function results() {
     if (e.which == 13) {
 
       // Animate positioning
-      $("#wikibox").animate({marginTop: "-=10%"});
+      $("#wikibox").animate({bottom: "15em", top: 0, left: 0, right: 0});
       $(function() {
         $(document).click(function() {
-          $("#wikibox").animate({top: $(window).height()/4});
+          $("#wikibox").animate({bottom: "3em", top: 0, left: 0, right: 0});
         });
       });
 

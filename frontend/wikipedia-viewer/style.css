@@ -20,8 +20,27 @@
   font-family: 'Poiret One', sans-serif;
 }
 
+#form {
+  text-align: center;
+}
+
+#hitSearch {
+  display: inline-block;
+  margin: 0px auto;
+  color: #EAB159;
+  outline: none;
+  border: none;
+  background-color: #FFFFFF;
+  font-size: 20px;
+}
+
+#hitSearch:hover {
+  cursor: pointer;
+  outline: 1px solid #EAB159;
+}
+
 input {
-  display: block;
+  display: inline-block;
   margin: 0px auto;
   font-size: 16px;
   color: #6B6B6B;
