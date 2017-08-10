@@ -27,7 +27,7 @@ input {
   color: #6B6B6B;
 }
 
-input[type=search] {
+input[type=text] {
   width: 75%;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
@@ -38,7 +38,7 @@ input[type=search] {
 }
 /* For screen larger than phones */
 @media screen and (min-width:700px) {
-  input[type=search] {
+  input[type=text] {
     width: 50%;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
@@ -47,20 +47,20 @@ input[type=search] {
     border-left: none;
     border-bottom: 1px solid #EAB159;
   }
-  input[type=search]:focus {
+  input[type=text]:focus {
     width: 75%;
     outline: none;
   }
-  input[type=search]:active {
+  input[type=text]:active {
     outline: none;
   }
 }
 
-input[type=search]:focus {
+input[type=text]:focus {
   outline: none;
 }
 
-input[type=search]:active {
+input[type=text]:active {
   outline: none;
 }
 
