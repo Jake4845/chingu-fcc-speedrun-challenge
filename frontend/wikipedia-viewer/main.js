@@ -8,10 +8,18 @@ $(document).ready(function() {
 
 // Store input from search bar when 'enter' is pressed
 function results() {
-  $('#searchInput').keypress(function(e) {
+  $("#searchInput").keypress(function(e) {
     if (e.which == 13) {
-      
-      // Clear results each time 'enter' or the onclear button is pressed
+
+      // Animate positioning
+      $("#wikibox").animate({marginTop: "-=10%"});
+      $(function() {
+        $(document).click(function() {
+          $("#wikibox").animate({top: $(window).height()/4});
+        });
+      });
+
+      // Clear results each time 'enter'
       searchResults = [];
       input = $("#searchInput").val();
 

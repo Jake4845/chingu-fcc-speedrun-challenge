@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   font-family: 'Poiret One', sans-serif;
 }
 
@@ -36,27 +36,8 @@ input[type=search] {
   border-left: none;
   border-bottom: 1px solid #EAB159;
 }
-/* For screen larger than phones */
-@media screen and (min-width:700px) {
-  input[type=search] {
-    width: 50%;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid #EAB159;
-  }
-  input[type=search]:focus {
-    width: 75%;
-    outline: none;
-  }
-  input[type=search]:active {
-    outline: none;
-  }
-}
 
-input[type=search]:focus:active {
+input[type=search]:focus {
   outline: none;
 }
 
@@ -127,4 +108,21 @@ footer div a i {
 
 footer div a i:hover {
 	color: #EAB159;
+}
+
+/* For screen larger than phones */
+@media screen and (min-width:700px) {
+  input[type=search] {
+    width: 40%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #EAB159;
+  }
+  input[type=search]:focus {
+    width: 65%;
+    outline: none;
+  }
 }
