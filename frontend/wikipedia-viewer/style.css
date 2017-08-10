@@ -129,7 +129,7 @@ footer div a i:hover {
 	color: #EAB159;
 }
 
-/* For screen larger than phones */
+/* For larger screens */
 @media screen and (min-width:700px) {
   input[type=search] {
     width: 40%;

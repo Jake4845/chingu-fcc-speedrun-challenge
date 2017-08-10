@@ -9,13 +9,6 @@ $(document).ready(function() {
 function results() {
   // Store input from search bar when button pressed
   $("#hitSearch").click(function() {
-    // Animate positioning
-    $("#wikibox").animate({bottom: "15em", top: 0, left: 0, right: 0});
-    $(function() {
-      $(document).click(function() {
-        $("#wikibox").animate({bottom: "3em", top: 0, left: 0, right: 0});
-      });
-    });
 
     // Clear results each time 'enter'
     searchResults = [];
@@ -27,6 +20,15 @@ function results() {
         for (var i=0; i<data[1].length; i++){
           searchResults.push(data[1][i]);
         }
+
+        // Animate positioning
+        $("#wikibox").animate({bottom: "15em", top: 0, left: 0, right: 0});
+        $(function() {
+          $(document).click(function() {
+            $("#wikibox").animate({bottom: "3em", top: 0, left: 0, right: 0});
+          });
+        });
+        
       });
     }
 
