@@ -3,7 +3,7 @@
 
 #wikibox {
   height: 50%;
-  width: 70%;
+  width: 100%;
   margin: auto;
   left: 0;
   right: 0;
@@ -63,7 +63,7 @@ input {
 }
 
 input[type=search] {
-  width: 75%;
+  width: 40%;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   border-top: none;
@@ -73,6 +73,7 @@ input[type=search] {
 }
 
 input[type=search]:focus {
+  width: 65%;
   outline: none;
 }
 
@@ -159,10 +160,10 @@ footer div a i:hover {
 	color: #EAB159;
 }
 
-/* For larger screens */
-@media screen and (min-width:700px) {
+/* For smaller screens */
+@media screen and (max-width:700px) {
   input[type=search] {
-    width: 40%;
+    width: 60%;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     border-top: none;
@@ -171,7 +172,7 @@ footer div a i:hover {
     border-bottom: 1px solid #EAB159;
   }
   input[type=search]:focus {
-    width: 65%;
+    width: 60%;
     outline: none;
   }
 }
