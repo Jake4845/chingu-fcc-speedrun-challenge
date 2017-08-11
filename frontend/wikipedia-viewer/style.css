@@ -219,4 +219,8 @@ footer div a i:hover {
     max-height: 100%;
     margin: 2em auto;
   }
+  #form {
+    text-align: center;
+    padding-left: 0px;
+  }
 }
