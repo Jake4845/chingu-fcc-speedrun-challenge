@@ -10,19 +10,13 @@
   <body>
     <div id="wikibox">
       <p id="wikititle">Wikipedia Viewer</p>
-      <form id="form">
-        <input id="searchInput" type="search" placeholder="Search...">
+      <form id="form" role="search">
+        <input id="searchInput" type="search" name="search" placeholder="Search..." aria-label="search for results">
         <button type="button" id="hitSearch"><i class="fa fa-search"></i></button>
+        <button type="button" id="refresh"><i class="fa fa-refresh"></i></button>
       </form>
       <a id="randart" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random Article</a>
     </div>
-    <!-- <div id="contents">
-      <div class="container">
-        <h2 class="t_hold">Title</h2>
-        <p class="c_hold">Content</p>
-        <a class="l_hold" href="#" target="_blank">Read More</a>
-      </div>
-    </div> -->
     <div id="fail"></div>
     <footer id="pagebottom">
       <div id="contact">

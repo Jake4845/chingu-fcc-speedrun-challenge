@@ -22,6 +22,7 @@
 
 #form {
   text-align: center;
+  padding-left: 60px;
 }
 
 #hitSearch {
@@ -35,6 +36,21 @@
 }
 
 #hitSearch:hover {
+  cursor: pointer;
+  outline: 1px solid #EAB159;
+}
+
+#refresh {
+  display: inline-block;
+  margin: 0px auto;
+  color: #EAB159;
+  outline: none;
+  border: none;
+  background-color: #FFFFFF;
+  font-size: 20px;
+}
+
+#refresh:hover {
   cursor: pointer;
   outline: 1px solid #EAB159;
 }
@@ -82,28 +98,6 @@ input[type=search]:focus {
 	background-color: #FFFFFF;
 	color: #EAB159;
 	cursor: pointer;
-}
-
-#contents {
-  border: 2px red dotted;
-  max-height: 9em;
-  max-width: 70%;
-  margin: 21em auto 0em auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.t_hold {
-  border: blue dotted 2px;
-}
-
-.c_hold {
-  border: green dotted 2px;
-}
-
-.l_hold {
-  border: purple dotted 2px;
 }
 
 .nothing {
