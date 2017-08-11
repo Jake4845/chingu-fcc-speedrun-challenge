@@ -8,7 +8,7 @@ $(document).ready(function() {
 });
 
 function results(callback) {
-  $(".content").hide();
+  //$(".content").hide();
   $("#hitSearch").click(function() {
     // Clear results each time search is made
     searchResults = []; searchInfo = []; searchLinks = [];
@@ -42,7 +42,9 @@ function results(callback) {
 
 function showResults() {
   if (searchResults.length > 0) {
-    $(".content").append("<div class='contentinfo'><h1 class='highlight'>Title Here</h1><p>Info Here</p><a class='highlight'>Link Here<a/></div>");
+    for (var i=0; i<searchResults.length; i++) {
+      $(".content").append("<div class='contentinfo'><h1 class='highlight'>" + searchResults[i] + "</h1><p>" + searchInfo[i] + "</p><a class='highlight' href='" + searchLinks[i] + "'>Read More<a/></div>");
+    }
     $(".content").fadeOut(1).fadeIn(1500);
     console.log(input, searchResults, searchInfo, searchLinks);
   }
