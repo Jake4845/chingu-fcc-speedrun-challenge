@@ -92,6 +92,11 @@ input[type=search]:focus {
   outline: none;
 }
 
+input[type=search]:active {
+  width: 65%;
+  outline: none;
+}
+
 #randart {
   display: block;
   max-width: 150px;
@@ -144,6 +149,10 @@ input[type=search]:focus {
 .highlightlink:hover {
   cursor: pointer;
   outline: 1px #EAB159 solid;
+}
+
+.highlightlink:active {
+  outline: none;
 }
 
 footer {
@@ -208,6 +217,10 @@ footer div a i:hover {
     border-bottom: 1px solid #EAB159;
   }
   input[type=search]:focus {
+    width: 60%;
+    outline: none;
+  }
+  input[type=search]:active {
     width: 60%;
     outline: none;
   }
