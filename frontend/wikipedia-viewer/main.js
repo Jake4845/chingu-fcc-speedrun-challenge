@@ -43,7 +43,7 @@ function results(callback) {
 function showResults() {
   if (searchResults.length > 0) {
     for (var i=0; i<searchResults.length; i++) {
-      $(".content").append("<div class='contentinfo'><h1 class='highlight'>" + searchResults[i] + "</h1><p>" + searchInfo[i] + "</p><a class='highlight' href='" + searchLinks[i] + "'>Read More<a/></div>");
+      $(".content").append("<div class='contentinfo'><h1 class='highlight'>" + searchResults[i] + "</h1><p>" + searchInfo[i] + "</p><a class='highlightlink' href='" + searchLinks[i] + "' target='_blank'>Read More<a/></div>");
     }
     $(".content").fadeOut(1).fadeIn(1500);
     console.log(input, searchResults, searchInfo, searchLinks);

@@ -118,12 +118,11 @@ input[type=search]:focus {
 
 .content {
   display: block;
-  margin-top: 45%;
+  margin-top: 30%;
 }
 
 .contentinfo {
   box-shadow: 4px 4px 5px #CFCFCF;
-  max-height: 9em;
   max-width: 70%;
   padding: 1em;
   margin: 2em auto;
@@ -136,6 +135,16 @@ input[type=search]:focus {
   color: #EAB159;
 }
 
+.highlightlink {
+  text-decoration: none;
+  color: #EAB159;
+  padding: 5px;
+}
+
+.highlightlink:hover {
+  cursor: pointer;
+  outline: 1px #EAB159 solid;
+}
 
 footer {
 	position: fixed;
@@ -183,7 +192,12 @@ footer div a i:hover {
 }
 
 /* For smaller screens */
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1050px) {
+  .content {
+    margin-top: 30em;
+}
+
+@media screen and (max-width:800px) {
   input[type=search] {
     width: 60%;
     -webkit-transition: width 0.4s ease-in-out;
