@@ -7,7 +7,8 @@ $(document).ready(function() {
 });
 
 function results(callback) {
-  $("#fail").hide()
+  $("#fail").hide();
+  //$(".content").hide();
   $("#hitSearch").click(function() {
     // Clear results each time 'enter'
     searchResults = [];
@@ -39,13 +40,14 @@ function results(callback) {
 function showResults() {
   animations();
   if (searchResults.length > 0) {
+    $(".content").append("<div class='contentinfo'><h1 class='highlight'>Title Here</h1><p>Info Here</p><a class='highlight'>Link Here<a/></div>")
     console.log(input);
     console.log(searchResults);
     //$("t_hold").html();
   }
   else {
     // Suggest alternative search options
-    $("#fail").append("<div class='nothing'><p>Sorry, there were no results matching your search.</p><p>The page <span id='failquery'><b>\"" + $("#searchInput").val() + "\"</b></span> does not exist.</p><ul><li>Check that all keywords are spelled correctly</li><li>Try using more general keywords</li><li>Try entering a shorter search if it is too long</li></ul></div>");
+    $("#fail").append("<div class='contentinfo'><p>Sorry, there were no results matching your search.</p><p>The page <span class='highlight'><b>\"" + $("#searchInput").val() + "\"</b></span> does not exist.</p><ul><li>Check that all keywords are spelled correctly</li><li>Try using more general keywords</li><li>Try entering a shorter search if it is too long</li></ul></div>");
     $("#fail").fadeIn(1500);
     console.log(input);
     console.log(searchResults);
