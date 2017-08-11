@@ -22,7 +22,7 @@ function results(callback) {
           searchInfo.push(data[2][i]);
           searchLinks.push(data[3][i]);
         }
-        showResults();
+        animations();
       });
     }
     // If nothing is entered, alert user
@@ -41,7 +41,6 @@ function results(callback) {
 };
 
 function showResults() {
-  animations();
   if (searchResults.length > 0) {
     $(".content").append("<div class='contentinfo'><h1 class='highlight'>Title Here</h1><p>Info Here</p><a class='highlight'>Link Here<a/></div>");
     $(".content").fadeOut(1).fadeIn(1500);
@@ -56,12 +55,13 @@ function showResults() {
 
 function animations() {
   // Animate positioning
-  $("#wikibox").animate({bottom: "21em", top: 0, left: 0, right: 0}, 750);
+  $("#wikibox").animate({bottom: "21em", top: 0, left: 0, right: 0}, 500);
   // Allow user to reset search
   $("#refresh").click(function() {
-    $("#wikibox").animate({bottom: "3em", top: 0, left: 0, right: 0}, 750);
+    $("#wikibox").animate({bottom: "3em", top: 0, left: 0, right: 0}, 500);
     input = undefined; searchResults = []; searchInfo = []; searchLinks = [];
     $(".contentinfo").remove();
     $("#form")[0].reset();
     });
+  showResults();
 }
