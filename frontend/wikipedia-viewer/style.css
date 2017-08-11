@@ -1,6 +1,20 @@
 /* CSS File for the Wikipedia Viewer */
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+  padding-bottom: 6em;
+}
+
 #wikibox {
   height: 50%;
   width: 100%;
@@ -110,12 +124,14 @@ input[type=search]:focus {
   margin: 30vw auto 0em auto;
   padding: 1em;
   font-family: sans-serif;
+  font-size: 16px;
   color: #6B6B6B;
 }
 
 .highlight {
   color: #EAB159;
 }
+
 
 footer {
 	position: fixed;

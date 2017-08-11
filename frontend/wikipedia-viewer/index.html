@@ -8,16 +8,18 @@
     <title>Wikipedia Viewer</title>
   </head>
   <body>
-    <div id="wikibox">
-      <p id="wikititle">Wikipedia Viewer</p>
-      <form id="form" role="search">
-        <input id="searchInput" type="search" name="search" placeholder="Search..." aria-label="search for results">
-        <button type="button" id="hitSearch"><i class="fa fa-search"></i></button>
-        <button type="button" id="refresh"><i class="fa fa-refresh"></i></button>
-      </form>
-      <a id="randart" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random Article</a>
+    <div class="wrapper">
+      <div id="wikibox">
+        <p id="wikititle">Wikipedia Viewer</p>
+        <form id="form" role="search">
+          <input id="searchInput" type="search" name="search" placeholder="Search..." aria-label="search for results">
+          <button type="button" id="hitSearch"><i class="fa fa-search"></i></button>
+          <button type="button" id="refresh"><i class="fa fa-refresh"></i></button>
+        </form>
+        <a id="randart" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random Article</a>
+      </div>
+      <div class="content"></div>
     </div>
-    <div class="content"></div>
     <footer id="pagebottom">
       <div id="contact">
         <p>by ziggysauce</p>
