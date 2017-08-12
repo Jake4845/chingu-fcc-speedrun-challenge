@@ -26,4 +26,7 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 
 
 ## Notes
-Created a wikipedia viewer that uses the Wikipedia API to generate linked articles for the user based on the input typed.
+[Medium Article](https://medium.com/me/stories/public)
+Created a wikipedia viewer app that uses the Wikipedia API to generate linked articles for the user based on the input submitted. The user can also click a button to be directed to a random wikipedia article. 
+
+Mobile response has bugs when viewed on codepen.io, but otherwise should operate as intended.
