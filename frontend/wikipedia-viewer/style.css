@@ -216,10 +216,6 @@ footer div a i:hover {
     border-left: none;
     border-bottom: 1px solid #EAB159;
   }
-  input[type=search]:focus, input[type=search]:active, input[type=search]:hover, input[type=search]::after {
-    width: 60%;
-    outline: none;
-  }
   .content {
     margin-top: 24em;
   }
