@@ -20,4 +20,4 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 ## Notes
 [Medium Article](https://medium.com/chingu-fcc-speedrun/fcc-speedrun-tribute-page-c9a399b0206)
 
-Created a tribute page for Dan Brown, a widely popular author who created the Robert Langdon series. Content and images courtesy of danbrown.com.
+Created a tribute page for Dan Brown, a widely popular author who created the Robert Langdon series. Content and images courtesy of http://danbrown.com.
