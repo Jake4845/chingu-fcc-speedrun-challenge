@@ -26,7 +26,7 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 
 
 ## Notes
-[Medium Article](https://medium.com/me/stories/public)
+[Medium Article](https://medium.com/@ziggysauce/fcc-speedrun-wikipedia-viewer-7da5cf72e4b1)
 
 Created a wikipedia viewer app that uses the Wikipedia API to generate linked articles for the user based on the input submitted. The user can also click a button to be directed to a random wikipedia article. 
 
