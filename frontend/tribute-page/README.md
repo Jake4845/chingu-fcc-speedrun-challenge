@@ -18,6 +18,6 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 [Tribute Page](https://ziggysauce.github.io/chingu-fcc-speedrun-challenge/frontend/tribute-page/)
 
 ## Notes
-[Medium Article] (https://medium.com/chingu-fcc-speedrun/fcc-speedrun-tribute-page-c9a399b0206)
+[Medium Article](https://medium.com/chingu-fcc-speedrun/fcc-speedrun-tribute-page-c9a399b0206)
 
 Created a tribute page for Dan Brown, a widely popular author who created the Robert Langdon series.
