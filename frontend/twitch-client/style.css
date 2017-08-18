@@ -1,0 +1,158 @@
+/* CSS styling for twitch-client app */
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  border: 1px blue dotted;
+  margin-bottom: 3em;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitchbox {
+  border: 2px cyan dotted;
+  height: 80%;
+  min-width: 280px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.twitch-head {
+  border: 2px orange dotted;
+}
+
+.twitch-nav {
+  border: 2px magenta dotted;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.twitchtoggle {
+  width: 100%;
+  height: 3em;
+  border: none;
+  background-color: #330063;
+  color: #FFF;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.twitchtoggle:hover {
+  background: rgba(95, 0, 185, 0.2);
+  color: #330063;
+}
+
+.twitch-body {
+  border: 2px yellow solid;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 90%;
+}
+
+.right {
+  width: 10%;
+}
+
+.allstreams {
+  border: 1px purple dotted;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.online {
+  border: 1px green dotted;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.offline {
+  border: 1px red dotted;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Online and Offline indicators; add in JS */
+.statuson, .statusoff {
+  display: inline-block;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
+.statuson {
+  background-color: #18A552;
+}
+
+.statusoff {
+  background-color: #E43636;
+}
+
+/* CSS for footer */
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 3em;
+	background-color: #000000;
+	z-index: 2;
+}
+
+#pagebottom {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10px;
+}
+
+#contact {
+	margin: 0px 10px;
+	padding: 0px 10px;
+	color: #C1C1C1;
+	font-family: sans-serif;
+  font-size: 1em;
+}
+
+#social {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-right: 10vw;
+	height: 90%;
+}
+
+footer div a i {
+  color: #C1C1C1;
+	margin: 0px 10px;
+}
+
+footer div a i:hover {
+	color: #EAB159;
+}

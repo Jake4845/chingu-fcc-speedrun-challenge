@@ -1,0 +1,66 @@
+<!-- HTML for twitch-client app -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Twitch Client</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="twitchbox">
+        <div class="twitch-head">
+          <h1>Twitch Streamers</h1>
+        </div>
+        <div class="twitch-nav">
+          <button type="button" name="all" class="twitchtoggle">all</button>
+          <button type="button" name="on" class="twitchtoggle">online</button>
+          <button type="button" name="off" class="twitchtoggle">offline</button>
+        </div>
+        <div class="twitch-body">
+          <div class="allstreams">
+            <div class="left">
+              <h3>Show all twitch streams here</h3>
+            </div>
+            <div class="right">
+              <span class="statuson"></span>
+              <span class="statusoff"></span>
+            </div>
+          </div>
+          <div class="online">
+            <div class="left">
+              <h3>Online twitch streams here</h3>
+              <p>Show streaming details</p>
+            </div>
+            <div class="right">
+              <span class="statuson"></span>
+            </div>
+          </div>
+          <div class="offline">
+            <div class="left">
+              <h3>Offline twitch streams here</h3>
+            </div>
+            <div class="right">
+              <span class="statusoff"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="pagebottom">
+      <div id="contact">
+        <p>by ziggysauce</p>
+      </div>
+      <div id="social">
+        <a href="https://www.linkedin.com/in/daniel-nguyen-1a041495/" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 1.5em;"></i></a>
+        <a href="https://github.com/ziggysauce" target="_blank"><i class="fa fa-github" style="font-size: 1.5em;"></i></a>
+        <a href="https://codepen.io/ziggysauce/" target="_blank"><i class="fa fa-codepen" style="font-size: 1.5em;"></i></a>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
