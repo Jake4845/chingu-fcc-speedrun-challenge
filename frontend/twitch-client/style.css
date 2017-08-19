@@ -80,11 +80,18 @@ html, body {
 }
 
 .online {
-  border: 1px green dotted;
+  border: 2px green dotted;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+.onbox, .offbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .offline {
@@ -93,6 +100,14 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+.t-title {
+  font-size: 20px;
+}
+
+.t-desc {
+  font-size: 12px;
 }
 
 /* Online and Offline indicators; add in JS */
