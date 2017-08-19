@@ -25,6 +25,7 @@ html, body {
 
 .twitch-head {
   border: 2px orange dotted;
+  padding: 10px;
 }
 
 .twitch-nav {
@@ -33,6 +34,7 @@ html, body {
   flex-direction: row;
   justify-content: space-around;
   background-color: transparent;
+  height: 2em;
 }
 
 .twitchtoggle {
