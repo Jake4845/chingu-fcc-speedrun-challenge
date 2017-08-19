@@ -1,12 +1,15 @@
 /* JS for twitch-client app */
 
-// Store stream names
+// Store stream names and URLs
 var api = "https://wind-bow.glitch.me/twitch-api/streams/";
 var streams = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"]
 
 $(document).ready(function() {
+  $(".onbox").hide();
+  $(".offbox").hide();
   // Loop through all streams for data
   streams.map(showStreams).map(streamData);
+  toggleAll(); toggleOn(); toggleOff();
 });
 
 
@@ -27,7 +30,29 @@ function streamData(data) {
     else {
       console.log("offline");
       // Create new div for every stream offline
-      $(".offbox").append("<div class='offline'><div class='left'><p class='t-title'>" + (data2._links.channel).slice(38) + "</p></div><div class='right'><span class='statusoff'></span></div></div>")
+      $(".offbox").append("<div class='offline'><div class='left'><p class='t-title'>" + (data2._links.channel).slice(38) + "</p></div><div class='right'><span class='statusoff'></span></div></div>");
     }
+  });
+};
+
+// Toggle between all, online, and off streams upon click
+function toggleAll() {
+  $("#alltab").click(function() {
+    $(".onbox").show(500);
+    $(".offbox").show(500);
+  });
+};
+
+function toggleOn() {
+  $("#ontab").click(function() {
+    $(".offbox").hide(500);
+    $(".onbox").show(500);
+  });
+};
+
+function toggleOff() {
+  $("#offtab").click(function() {
+    $(".onbox").hide(500);
+    $(".offbox").show(500);
   });
 };

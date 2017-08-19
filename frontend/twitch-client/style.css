@@ -6,9 +6,9 @@ html, body {
 
 .wrapper {
   border: 1px blue dotted;
-  margin-bottom: 3em;
+  margin-bottom: 6em;
+  margin-top: 3em;
   width: 100%;
-  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +17,6 @@ html, body {
 
 .twitchbox {
   border: 2px cyan dotted;
-  height: 80%;
   min-width: 280px;
   width: 50%;
   display: flex;
@@ -108,6 +107,7 @@ html, body {
 
 .t-desc {
   font-size: 12px;
+  padding: 10px;
 }
 
 /* Online and Offline indicators; add in JS */
