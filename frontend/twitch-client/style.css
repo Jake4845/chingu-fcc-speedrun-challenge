@@ -1,12 +1,13 @@
 /* CSS styling for twitch-client app */
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
 
 html, body {
   height: 100%;
+  background: #FFE8C9;
 }
 
 .wrapper {
-  border: 1px blue dotted;
   margin-bottom: 6em;
   margin-top: 3em;
   width: 100%;
@@ -17,11 +18,12 @@ html, body {
 }
 
 .twitchbox {
-  border: 2px cyan dotted;
   min-width: 280px;
   width: 50%;
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 5px #878787;
+  background: #FFF;
 }
 
 #ticon {
@@ -33,7 +35,6 @@ html, body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 2px orange dotted;
   padding: 10px;
   margin: 0px auto;
   font-family: 'Orbitron', sans-serif;
@@ -41,7 +42,6 @@ html, body {
 }
 
 .twitch-nav {
-  border: 2px magenta dotted;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -58,6 +58,7 @@ html, body {
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  font-family: 'Questrial', sans-serif;
 }
 
 .twitchtoggle:hover {
@@ -67,11 +68,8 @@ html, body {
 
 .activenav {
   background: #6441A4;
-  color: #FFF; 
-}
-
-.twitch-body {
-  border: 2px yellow solid;
+  color: #FFF;
+  font-family: 'Questrial', sans-serif;
 }
 
 .left, .right {
@@ -79,6 +77,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .left {
@@ -89,20 +88,17 @@ html, body {
   width: 10%;
 }
 
-.allstreams {
-  border: 1px purple dotted;
+.online, .offline {
+  border-top: 1px solid #FFF;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-}
-
-.online {
-  border: 2px green dotted;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  color: #000;
+  background: linear-gradient(to bottom, #FFF 0%, #B39AFF 100%) fixed;
+  background: -webkit-linear-gradient(to bottom, #FFF 0%, #B39AFF 100%) fixed;
+  background: -moz-linear-gradient(to bottom, #FFF 0%, #B39AFF 100%) fixed;
+  font-family: 'Questrial', sans-serif;
 }
 
 .onbox, .offbox {
@@ -112,25 +108,17 @@ html, body {
   width: 100%;
 }
 
-.offline {
-  border: 1px red dotted;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .t-title {
   font-size: 20px;
 }
 
 .left a {
   text-decoration: none;
-  color: #000;
+  color: #6441A4;
 }
 
 .left a:hover {
-  color: #C1C1C1;
+  color: #CF7C0B;
 }
 
 .t-desc {

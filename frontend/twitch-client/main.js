@@ -26,12 +26,12 @@ function streamData(data) {
     if (data2.stream) {
       console.log("online");
       // Create new div for every stream online
-      $(".onbox").append("<div class='online'><div class='left'><a href='" + data2.stream.channel.url + "' class='t-title'>" + data2.stream.channel.display_name + "</a><p class='t-desc'>" + data2.stream.channel.status + "</p></div><div class='right'><span class='statuson'></span></div></div>");
+      $(".onbox").append("<div class='online'><div class='left'><a href='" + data2.stream.channel.url + "' class='t-title' target='_blank'>" + data2.stream.channel.display_name + "</a><p class='t-desc'>" + data2.stream.channel.status + "</p></div><div class='right'><span class='statuson'></span></div></div>");
     }
     else {
       console.log("offline");
       // Create new div for every stream offline
-      $(".offbox").append("<div class='offline'><div class='left'><a href='https://www.twitch.tv/" + data2._links.channel.slice(38) + "' class='t-title'>" + (data2._links.channel).slice(38) + "</a></div><div class='right'><span class='statusoff'></span></div></div>");
+      $(".offbox").append("<div class='offline'><div class='left'><a href='https://www.twitch.tv/" + data2._links.channel.slice(38) + "' class='t-title' target='_blank'>" + (data2._links.channel).slice(38) + "</a></div><div class='right'><span class='statusoff'></span></div></div>");
     }
   });
 };
