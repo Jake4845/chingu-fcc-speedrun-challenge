@@ -4,7 +4,7 @@
 
 html, body {
   height: 100%;
-  background: #FFE8C9;
+  background: #D3D3D3;
 }
 
 .wrapper {
@@ -118,7 +118,7 @@ html, body {
 }
 
 .left a:hover {
-  color: #CF7C0B;
+  color: #DF8000;
 }
 
 .t-desc {
