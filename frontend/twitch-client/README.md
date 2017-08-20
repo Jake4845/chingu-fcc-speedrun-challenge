@@ -18,4 +18,13 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 
 **UPDATE:** Due to a change in conditions on API usage explained here Twitch.tv now requires an API key, but we've built a workaround. Use https://wind-bow.gomix.me/twitch-api instead of twitch's API base URL (i.e. https://api.twitch.tv/kraken ) and you'll still be able to get account information, without needing to sign up for an API key.
 
+## Deployment
+* Open index.html
+
+## Launch
+[Twitch Client](https://ziggysauce.github.io/chingu-fcc-speedrun-challenge/frontend/twitch-client/index.html)
+
 ## Notes
+[Medium Article]()
+
+Created a twitch-client app that uses the FCC API https://wind-bow.glitch.me/ (pass-through for twitch API) and shows the online/offline status of streams saved in the JavaScript list. If a streamer is currently online it also shows a description.
