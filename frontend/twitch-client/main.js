@@ -9,6 +9,7 @@ $(document).ready(function() {
   $(".offbox").hide();
   // Loop through all streams for data
   streams.map(showStreams).map(streamData);
+  // Clicking on any of the navigation buttons shows the streams corresponding
   toggleAll(); toggleOn(); toggleOff();
 });
 
@@ -25,12 +26,12 @@ function streamData(data) {
     if (data2.stream) {
       console.log("online");
       // Create new div for every stream online
-      $(".onbox").append("<div class='online'><div class='left'><p class='t-title'>" + data2.stream.channel.display_name + "</p><p class='t-desc'>" + data2.stream.channel.status + "</p></div><div class='right'><span class='statuson'></span></div></div>");
+      $(".onbox").append("<div class='online'><div class='left'><a href='" + data2.stream.channel.url + "' class='t-title'>" + data2.stream.channel.display_name + "</a><p class='t-desc'>" + data2.stream.channel.status + "</p></div><div class='right'><span class='statuson'></span></div></div>");
     }
     else {
       console.log("offline");
       // Create new div for every stream offline
-      $(".offbox").append("<div class='offline'><div class='left'><p class='t-title'>" + (data2._links.channel).slice(38) + "</p></div><div class='right'><span class='statusoff'></span></div></div>");
+      $(".offbox").append("<div class='offline'><div class='left'><a href='https://www.twitch.tv/" + data2._links.channel.slice(38) + "' class='t-title'>" + (data2._links.channel).slice(38) + "</a></div><div class='right'><span class='statusoff'></span></div></div>");
     }
   });
 };
@@ -38,6 +39,9 @@ function streamData(data) {
 // Toggle between all, online, and off streams upon click
 function toggleAll() {
   $("#alltab").click(function() {
+    $("#ontab").removeClass("activenav");
+    $("#offtab").removeClass("activenav");
+    $("#alltab").addClass("activenav");
     $(".onbox").show(500);
     $(".offbox").show(500);
   });
@@ -45,6 +49,9 @@ function toggleAll() {
 
 function toggleOn() {
   $("#ontab").click(function() {
+    $("#alltab").removeClass("activenav");
+    $("#offtab").removeClass("activenav");
+    $("#ontab").addClass("activenav");
     $(".offbox").hide(500);
     $(".onbox").show(500);
   });
@@ -52,6 +59,9 @@ function toggleOn() {
 
 function toggleOff() {
   $("#offtab").click(function() {
+    $("#ontab").removeClass("activenav");
+    $("#alltab").removeClass("activenav");
+    $("#offtab").addClass("activenav");
     $(".onbox").hide(500);
     $(".offbox").show(500);
   });
