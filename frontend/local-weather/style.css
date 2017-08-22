@@ -1,7 +1,7 @@
 /* Stylesheet for Local Weather App */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-body {
+html {
   background: linear-gradient(to bottom, #4C739B 0%, #B0D5A7 100%) fixed;
   background: -webkit-linear-gradient(to bottom, #4C739B 0%, #B0D5A7 100%) fixed;
   background: -moz-linear-gradient(to bottom, #4C739B 0%, #B0D5A7 100%) fixed;
