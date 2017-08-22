@@ -96,10 +96,13 @@ html, body {
   align-items: center;
   justify-content: space-around;
   color: #000;
+  font-family: 'Questrial', sans-serif;
+}
+
+.twitch-body {
   background: linear-gradient(to bottom, #FFF 0%, #B39AFF 100%) fixed;
   background: -webkit-linear-gradient(to bottom, #FFF 0%, #B39AFF 100%) fixed;
   background: -moz-linear-gradient(to bottom, #FFF 0%, #B39AFF 100%) fixed;
-  font-family: 'Questrial', sans-serif;
 }
 
 .onbox, .offbox {
