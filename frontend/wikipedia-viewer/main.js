@@ -50,7 +50,7 @@ function showResults() {
   }
   else {
     // Suggest alternative search options
-    $(".content").append("<div class='contentinfo'><p>Sorry, there were no results matching your search.</p><p>The page <span class='highlight'><b>\"" + $("#searchInput").val() + "\"</b></span> does not exist.</p><ul><li>Check that all keywords are spelled correctly</li><li>Try using more general keywords (be less specific)</li><li>Try entering a shorter search if it is too long</li></ul></div>");
+    $(".content").append("<div class='contentinfo'><p>Sorry, there were no results matching your search.</p><p>The page <span class='highlight'><strong>\"" + $("#searchInput").val() + "\"</strong></span> does not exist.</p><ul><li>Check that all keywords are spelled correctly</li><li>Try using more general keywords (be less specific)</li><li>Try entering a shorter search if it is too long</li></ul></div>");
     $(".content").fadeOut(1).fadeIn(1500);
   }
 };
