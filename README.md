@@ -71,7 +71,7 @@ Copy this table as needed to make a separate table for each team member for reco
 |   7/16/17   |  [Medium Post](https://medium.com/@ziggysauce/fcc-speedrun-random-quote-machine-db39a0092175)  | [Build a Random Quote Machine](./frontend/random-quote-machine) |  |
 |   7/31/17   |  [Medium Post](https://medium.com/chingu-fcc-speedrun/fcc-speedrun-local-weather-app-43053a11472a)  | [Show the Local Weather](./frontend/local-weather) |  |
 |   8/12/17   |  [Medium Post](https://medium.com/chingu-fcc-speedrun/fcc-speedrun-wikipedia-viewer-7da5cf72e4b1)  | [Build a Wikipedia Viewer](./frontend/wikipedia-viewer) |  |
-|      |  [ ]()  | [Use the Twitch.tv JSON API](./frontend/twitch-client) |  |
+|   8/20/17   |  [Medium Post](https://medium.com/chingu-fcc-speedrun/fcc-speedrun-twitch-client-3810470daf9d)  | [Use the Twitch.tv JSON API](./frontend/twitch-client) |  |
 |      |  [ ]()  | [Build a JavaScript Calculator](./frontend/calculator) |  |
 |      |  [ ]()  | [Build a Pomodoro Clock](./frontend/pomodoro-clock) |  |
 |      |  [ ]()  | [Build a Tic Tac Toe Game](./frontend/tictactoe-game) |  |
