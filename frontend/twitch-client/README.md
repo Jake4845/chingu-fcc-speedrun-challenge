@@ -25,6 +25,6 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 [Twitch Client](https://ziggysauce.github.io/chingu-fcc-speedrun-challenge/frontend/twitch-client/index.html)
 
 ## Notes
-[Medium Article]()
+[Medium Article](https://medium.com/chingu-fcc-speedrun/fcc-speedrun-twitch-client-3810470daf9d)
 
 Created a twitch-client app that uses the FCC API https://wind-bow.glitch.me/ (pass-through for twitch API) and shows the online/offline status of streams saved in the JavaScript list. If a streamer is currently online it also shows a description.
